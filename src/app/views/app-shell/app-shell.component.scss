@@ -1,0 +1,15 @@
+@import '../../styles/colors/_index.scss';
+
+.app {
+    &--container {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+    }
+    &--sidenav {
+        background-color: $sidenav-bg-color;
+    }
+    &--content {
+        background-color: $background-color;
+    }
+}
