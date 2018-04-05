@@ -1,0 +1,14 @@
+@import '../../styles/colors/_index.scss';
+
+.sidenav-logout {
+    padding: 20px;
+    border-top: 1px solid $grey-color;
+    cursor: pointer;
+
+    &--close {
+        color: $danger-color;
+        font-size: 32px;
+        height: 32px;
+        width: 32px;
+    }
+}

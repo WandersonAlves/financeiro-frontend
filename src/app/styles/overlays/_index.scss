@@ -7,7 +7,19 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-* { font-family: 'Fira Sans'}
+* { font-family: 'Fira Sans'; color: #353535 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+}
 
 .mat-drawer-container {
     height: 100%;

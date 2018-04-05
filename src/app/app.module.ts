@@ -5,22 +5,25 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from './app.component';
 import { MaterialImports } from './material.imports';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { COMPONENTS_IMPORTS } from './components.imports';
-import 'hammerjs';
 import { APP_ROUTES } from './app.routes';
+
+import 'hammerjs';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ...COMPONENTS_IMPORTS
+    ...COMPONENTS_IMPORTS,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     MaterialImports,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

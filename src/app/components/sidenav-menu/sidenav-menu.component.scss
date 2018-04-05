@@ -1,0 +1,8 @@
+@import '../../styles/colors/_index.scss';
+
+.sidenav-menu {
+    cursor: pointer;
+    &--opened {
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/colors/_index.scss';
+
+.sidenav-user {
+    &--icon {
+        height: 64px;
+        width: 64px;
+        font-size: 64px;
+        color: $primary-color;
+    }
+
+    &--unidade {
+        color: $grey-color;
+        font-size: 0.8rem;
+    }
+}
