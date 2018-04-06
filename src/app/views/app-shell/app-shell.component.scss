@@ -7,7 +7,7 @@
         overflow: auto;
     }
     &--sidenav {
-        background-color: $sidenav-bg-color;
+        background: linear-gradient(0deg, rgba(222,164,202,0.5) 0%, rgba(240,231,228,1) 100%);
     }
     &--content {
         background-color: $background-color;

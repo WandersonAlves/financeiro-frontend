@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { AppShellComponent } from "./views/app-shell/app-shell.component";
 import { LoginViewComponent } from "./views/login-view/login-view.component";
+import { UnidadeViewComponent } from "./views/unidade-view/unidade-view.component";
 
 export const APP_ROUTES: Routes = [
     { path: 'login', component: LoginViewComponent },
@@ -8,7 +9,7 @@ export const APP_ROUTES: Routes = [
         path: 'main', 
         component: AppShellComponent, 
         children: [
-            
+            { path: 'unidade', component: UnidadeViewComponent }
         ] 
     },
     { path: '', redirectTo: '/login', pathMatch: 'full' }

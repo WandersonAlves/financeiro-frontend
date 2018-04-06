@@ -5,4 +5,7 @@
     &--opened {
         color: $primary-color;
     }
+    &--disabled {
+        color: $grey-color;
+    }
 }

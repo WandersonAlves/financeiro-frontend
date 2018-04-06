@@ -5,13 +5,23 @@ import { SidenavUserComponent } from "./components/sidenav-user/sidenav-user.com
 import { SidenavBannerComponent } from "./components/sidenav-banner/sidenav-banner.component";
 import { SidenavLogoutComponent } from "./components/sidenav-logout/sidenav-logout.component";
 import { SidenavMenuComponent } from "./components/sidenav-menu/sidenav-menu.component";
+import { FlatButtonComponent } from "./components/flat-button/flat-button.component";
+import { UnidadeViewComponent } from "./views/unidade-view/unidade-view.component";
+import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.component";
 
-export const COMPONENTS_IMPORTS: Array<any> = [
+export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
     LoginViewComponent,
+    UnidadeViewComponent,
+];
+
+export const COMPONENTS_IMPORTS: Array<any> = [
     SidenavBodyComponent,
     SidenavUserComponent,
     SidenavBannerComponent,
     SidenavLogoutComponent,
     SidenavMenuComponent,
-]
+    FlatButtonComponent,
+    UnidadeCardComponent,
+    ...VIEWS_IMPORTS    
+];

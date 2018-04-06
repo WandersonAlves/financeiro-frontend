@@ -1,14 +1,14 @@
 <div fxLayout="column" fxLayoutGap="15px">
   <div *ngFor="let item of menuItems" fxLayout="column" fxLayoutGap="15px">
-    <div fxLayout="row" fxLayoutGap="10px" class="flex-align-center sidenav-menu" (click)="item.isOpen = !item.isOpen">
+    <div fxLayout="row" fxLayoutGap="10px" class="flex-align-center sidenav-menu" (click)="handleMenuClick(item)">
       <mat-icon *ngIf="item.isOpen; else isClosed" [ngClass]="{'sidenav-menu--opened': item.isOpen}">remove</mat-icon>
       <ng-template #isClosed>
-        <mat-icon [ngClass]="{'sidenav-menu--opened': item.isOpen}">add</mat-icon>
+        <mat-icon [ngClass]="{'sidenav-menu--opened': item.isOpen, 'sidenav-menu--disabled': item.disabled}">add</mat-icon>
       </ng-template>
-      <span class="uppercase" [ngClass]="{'sidenav-menu--opened': item.isOpen}">{{item.title}}</span>
+      <span class="uppercase" [ngClass]="{'sidenav-menu--opened': item.isOpen, 'sidenav-menu--disabled': item.disabled}">{{item.title}}</span>
     </div>
     <div *ngIf="item.isOpen" fxLayout="column" fxLayoutGap="15px">
-      <div *ngFor="let children of item.children" fxLayout="row" fxLayoutGap="10px" class="flex-align-center">
+      <div *ngFor="let children of item.children" fxLayout="row" fxLayoutGap="10px" [routerLink]="[children.routerLink]" class="flex-align-center">
         <mat-icon></mat-icon>
         <span class="sidenav-menu">{{children.title}}</span>
       </div>

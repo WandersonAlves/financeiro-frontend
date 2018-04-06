@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavMenuComponent implements OnInit {
 
-  public menuItems: Array<IMenuItems> = [
+  public menuItems: Array<IMenuItem> = [
     {
       title: 'cadastros',
       isOpen: false,
       children: [
         {
           title: 'Unidade',
-          routerLink: null
+          routerLink: 'unidade'
         },
         {
           title: 'Usuario',
@@ -22,63 +22,55 @@ export class SidenavMenuComponent implements OnInit {
         },
         {
           title: 'Bancos',
+          routerLink: null
+        },
+        {
+          title: 'Aluno Próprio',
           routerLink: null
         },
       ]
     },
     {
-      title: 'cadastros',
+      title: 'CRECEp',
       isOpen: false,
       children: [
         {
-          title: 'Unidade',
+          title: 'Movimento Inicial',
           routerLink: null
         },
         {
-          title: 'Usuario',
+          title: 'Recebimentos',
           routerLink: null
         },
         {
-          title: 'Bancos',
+          title: 'Repasses',
           routerLink: null
         },
+        {
+          title: 'Relatórios',
+          routerLink: null
+        }
       ]
     },
     {
-      title: 'cadastros',
+      title: 'plancob',
       isOpen: false,
-      children: [
-        {
-          title: 'Unidade',
-          routerLink: null
-        },
-        {
-          title: 'Usuario',
-          routerLink: null
-        },
-        {
-          title: 'Bancos',
-          routerLink: null
-        },
-      ]
+      disabled: true
     },
     {
-      title: 'cadastros',
+      title: 'tesouraria',
       isOpen: false,
-      children: [
-        {
-          title: 'Unidade',
-          routerLink: null
-        },
-        {
-          title: 'Usuario',
-          routerLink: null
-        },
-        {
-          title: 'Bancos',
-          routerLink: null
-        },
-      ]
+      disabled: true
+    },
+    {
+      title: 'bancos',
+      isOpen: false,
+      disabled: true
+    },
+    {
+      title: 'pessoal',
+      isOpen: false,
+      disabled: true
     }
   ]
 
@@ -87,10 +79,18 @@ export class SidenavMenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleMenuClick(item: IMenuItem) {
+    if (item.disabled) {
+      return;
+    }
+    item.isOpen = !item.isOpen;
+  }
+
 }
 
-interface IMenuItems {
+interface IMenuItem {
   title: string,
   isOpen: boolean,
-  children: Array<{ title: string, routerLink: string}>
+  disabled?: boolean,
+  children?: Array<{ title: string, routerLink: string}>
 }
