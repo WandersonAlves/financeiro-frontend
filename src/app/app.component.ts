@@ -12,5 +12,6 @@ export class AppComponent {
   
   constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('close-circle', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/close-circle.svg'));
+    iconRegistry.addSvgIcon('money-bag', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/money-bag.svg'));
   }
 }
