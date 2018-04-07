@@ -5,6 +5,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from './app.component';
 import { MaterialImports } from './material.imports';
 import { RouterModule } from '@angular/router';
+// Imported because mat-icon uses it to get icons
 import { HttpClientModule } from '@angular/common/http';
 
 import { COMPONENTS_IMPORTS } from './components.imports';
