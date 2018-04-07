@@ -9,6 +9,7 @@ import { FlatButtonComponent } from "./components/flat-button/flat-button.compon
 import { UnidadeViewComponent } from "./views/unidade-view/unidade-view.component";
 import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.component";
 import { SearchBarComponent } from "./components/search-bar/search-bar.component";
+import { FabButtonComponent } from "./components/fab-button/fab-button.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
@@ -25,5 +26,6 @@ export const COMPONENTS_IMPORTS: Array<any> = [
     FlatButtonComponent,
     UnidadeCardComponent,
     SearchBarComponent,
+    FabButtonComponent,
     ...VIEWS_IMPORTS    
 ];

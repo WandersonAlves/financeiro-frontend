@@ -9,10 +9,10 @@ import { IUnidade } from '../../interfaces/unidade.interface';
 export class UnidadeCardComponent implements OnInit {
 
   @Input() unidade: IUnidade = {
-    date: '25/10/1991',
-    name: 'M6',
-    registrant: 'Popoto',
-    status: 'block'
+    date: '07/04/2018',
+    name: 'M1',
+    registrant: 'Wanderson',
+    status: 'unblock'
   };
 
   constructor() { }
