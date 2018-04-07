@@ -10,6 +10,19 @@
         background: linear-gradient(0deg, rgba(222,164,202,0.5) 0%, rgba(240,231,228,1) 100%);
     }
     &--content {
+        padding: 4%;
         background-color: $background-color;
+    }
+    &--location-area {
+        margin-bottom: 40px;
+
+        &--current {
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: rgba(0,0,0,0.65);
+        }
+        &--icon {
+            color: rgba(0,0,0,0.65);
+        }
     }
 }

@@ -8,6 +8,7 @@ import { SidenavMenuComponent } from "./components/sidenav-menu/sidenav-menu.com
 import { FlatButtonComponent } from "./components/flat-button/flat-button.component";
 import { UnidadeViewComponent } from "./views/unidade-view/unidade-view.component";
 import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.component";
+import { SearchBarComponent } from "./components/search-bar/search-bar.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
@@ -23,5 +24,6 @@ export const COMPONENTS_IMPORTS: Array<any> = [
     SidenavMenuComponent,
     FlatButtonComponent,
     UnidadeCardComponent,
+    SearchBarComponent,
     ...VIEWS_IMPORTS    
 ];

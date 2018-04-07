@@ -12,7 +12,7 @@ export class UnidadeCardComponent implements OnInit {
     date: '25/10/1991',
     name: 'M6',
     registrant: 'Popoto',
-    status: 'unblock'
+    status: 'block'
   };
 
   constructor() { }
