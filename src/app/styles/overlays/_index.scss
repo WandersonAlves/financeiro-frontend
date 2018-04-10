@@ -7,8 +7,27 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-* { font-family: 'Fira Sans'}
+* { font-family: 'Fira Sans'; color: #353535e1 }
+*:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+}
 
 .mat-drawer-container {
     height: 100%;
+}
+
+.mat-drawer-content {
+  margin-left: 264px !important;
 }

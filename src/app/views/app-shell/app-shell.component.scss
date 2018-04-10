@@ -7,9 +7,24 @@
         overflow: auto;
     }
     &--sidenav {
-        background-color: $sidenav-bg-color;
+        background: linear-gradient(0deg, rgba(222,164,202,0.5) 0%, rgba(240,231,228,1) 100%);
     }
     &--content {
         background-color: $background-color;
+        &--area {
+            padding: 40px;
+        }
+    }
+    &--location-area {
+        margin-bottom: 40px;
+
+        &--current {
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: rgba(0,0,0,0.65);
+        }
+        &--icon {
+            color: rgba(0,0,0,0.65);
+        }
     }
 }

@@ -1,0 +1,20 @@
+<div fxFlexLayout="column" class="login">
+  <div fxLayoutAlign="center center" fxLayout="row" fxFlexFill>
+    <div class="login--box" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+      <mat-icon svgIcon="money-bag" class="login--box--logo">monetization_on</mat-icon>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Unidade" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Usuario" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput type="password" placeholder="Senha" required>
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutGap="25px" class="flex-justify-space-around login--box--button-area">
+        <flat-button (click)="login()" text="Acessar" icon="check_circle" color="green"></flat-button>
+        <flat-button text="Sair" icon="report" color="#DF1C82"></flat-button>
+      </div>
+    </div>
+  </div>  
+</div>

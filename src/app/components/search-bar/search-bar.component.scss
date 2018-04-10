@@ -1,0 +1,25 @@
+@import '../../styles/colors/_index.scss';
+
+.search-bar {
+    background: linear-gradient(90deg, rgba(222,164,202,0.5) 0%, rgba(240,231,228,1) 100%);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    &--title {
+        color: white;
+    }
+
+    &--icon {
+        color: white;
+    }
+    &--input {
+        background-color: transparent;
+        border-color: transparent;
+        width: 100%;
+        color: white;
+        font-size: 18px;
+    }
+}

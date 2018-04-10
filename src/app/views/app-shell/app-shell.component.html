@@ -1,8 +1,18 @@
 <div class="app--container">
   <mat-sidenav-container>
-    <mat-sidenav class="app--sidenav" mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav class="app--sidenav" mode="side" opened>
+      <sidenav-body></sidenav-body>
+    </mat-sidenav>
     <mat-sidenav-content class="app--content">
-      <router-outlet></router-outlet>
+      <div class="app--content--area">
+        <div fxLayout="row" fxLayoutGap="10px" class="app--location-area flex-align-center">
+          <button mat-icon-button (click)="navigateBack()">
+            <mat-icon class="app--location-area--icon">keyboard_arrow_left</mat-icon>
+          </button>
+          <span class="app--location-area--current">CADASTROS > UNIDADE</span>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

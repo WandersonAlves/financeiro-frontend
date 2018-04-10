@@ -1,0 +1,11 @@
+@import '../../styles/colors/_index.scss';
+
+.sidenav-banner {
+    &--lista-modulos {
+        font-size: 1.5rem;
+    }
+    &--system {
+        color: $grey-color;
+        font-size: 0.9rem;
+    }
+}
