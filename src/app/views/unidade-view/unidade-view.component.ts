@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'unidade-view',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnidadeViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  createUnidade() {
+    this.router.navigate(['main/unidade-cadastro']);
   }
 
 }

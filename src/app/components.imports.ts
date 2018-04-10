@@ -10,11 +10,13 @@ import { UnidadeViewComponent } from "./views/unidade-view/unidade-view.componen
 import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.component";
 import { SearchBarComponent } from "./components/search-bar/search-bar.component";
 import { FabButtonComponent } from "./components/fab-button/fab-button.component";
+import { UnidadeCadastroViewComponent } from "./views/unidade-cadastro-view/unidade-cadastro-view.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
     LoginViewComponent,
     UnidadeViewComponent,
+    UnidadeCadastroViewComponent,
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [
