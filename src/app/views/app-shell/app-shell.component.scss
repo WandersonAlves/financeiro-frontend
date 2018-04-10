@@ -10,8 +10,10 @@
         background: linear-gradient(0deg, rgba(222,164,202,0.5) 0%, rgba(240,231,228,1) 100%);
     }
     &--content {
-        padding: 4%;
         background-color: $background-color;
+        &--area {
+            padding: 40px;
+        }
     }
     &--location-area {
         margin-bottom: 40px;
