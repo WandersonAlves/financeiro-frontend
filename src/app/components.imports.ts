@@ -12,12 +12,14 @@ import { SearchBarComponent } from "./components/search-bar/search-bar.component
 import { FabButtonComponent } from "./components/fab-button/fab-button.component";
 import { UnidadeCadastroViewComponent } from "./views/unidade-cadastro-view/unidade-cadastro-view.component";
 import { DialogAlertComponent } from "./components/dialog-alert/dialog-alert.component";
+import { BancoCadastroViewComponent } from "./views/banco-cadastro-view/banco-cadastro-view.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
     LoginViewComponent,
     UnidadeViewComponent,
     UnidadeCadastroViewComponent,
+    BancoCadastroViewComponent
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [
