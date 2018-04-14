@@ -11,6 +11,7 @@ import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.com
 import { SearchBarComponent } from "./components/search-bar/search-bar.component";
 import { FabButtonComponent } from "./components/fab-button/fab-button.component";
 import { UnidadeCadastroViewComponent } from "./views/unidade-cadastro-view/unidade-cadastro-view.component";
+import { DialogAlertComponent } from "./components/dialog-alert/dialog-alert.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
@@ -29,5 +30,6 @@ export const COMPONENTS_IMPORTS: Array<any> = [
     UnidadeCardComponent,
     SearchBarComponent,
     FabButtonComponent,
+    DialogAlertComponent,
     ...VIEWS_IMPORTS    
 ];

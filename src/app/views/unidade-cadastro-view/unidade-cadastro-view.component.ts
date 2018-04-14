@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { DialogAlertComponent } from '../../components/dialog-alert/dialog-alert.component';
 
 @Component({
   selector: 'unidade-cadastro-view',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnidadeCadastroViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  openConfirm() {
+    this.dialog.open(DialogAlertComponent, {
+      data: "Unidade cadastrada com sucesso!"
+    });
   }
 
 }

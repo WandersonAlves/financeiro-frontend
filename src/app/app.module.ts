@@ -7,6 +7,7 @@ import { MaterialImports } from './material.imports';
 import { RouterModule } from '@angular/router';
 // Imported because mat-icon uses it to get icons
 import { HttpClientModule } from '@angular/common/http';
+import { DialogAlertComponent } from './components/dialog-alert/dialog-alert.component';
 
 import { COMPONENTS_IMPORTS } from './components.imports';
 import { APP_ROUTES } from './app.routes';
@@ -17,6 +18,9 @@ import 'hammerjs';
   declarations: [
     AppComponent,
     ...COMPONENTS_IMPORTS,
+  ],
+  entryComponents: [
+    DialogAlertComponent
   ],
   imports: [
     BrowserModule,
