@@ -13,13 +13,15 @@ import { FabButtonComponent } from "./components/fab-button/fab-button.component
 import { UnidadeCadastroViewComponent } from "./views/unidade-cadastro-view/unidade-cadastro-view.component";
 import { DialogAlertComponent } from "./components/dialog-alert/dialog-alert.component";
 import { BancoCadastroViewComponent } from "./views/banco-cadastro-view/banco-cadastro-view.component";
+import { AlunoCadastroViewComponent } from "./views/aluno-cadastro-view/aluno-cadastro-view.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
     LoginViewComponent,
     UnidadeViewComponent,
     UnidadeCadastroViewComponent,
-    BancoCadastroViewComponent
+    BancoCadastroViewComponent,
+    AlunoCadastroViewComponent
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [

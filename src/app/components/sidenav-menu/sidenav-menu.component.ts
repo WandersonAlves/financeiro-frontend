@@ -26,7 +26,7 @@ export class SidenavMenuComponent implements OnInit {
         },
         {
           title: 'Aluno',
-          routerLink: null
+          routerLink: 'aluno-cadastro'
         },
       ]
     },
