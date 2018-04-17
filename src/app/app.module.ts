@@ -12,6 +12,7 @@ import { COMPONENTS_IMPORTS } from './components.imports';
 import { APP_ROUTES } from './app.routes';
 
 import 'hammerjs';
+import { APP_PROVIDERS } from './app.providers';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import 'hammerjs';
     RouterModule.forRoot(APP_ROUTES),
     HttpClientModule
   ],
-  providers: [],
+  providers: [...APP_PROVIDERS],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
