@@ -18,7 +18,7 @@ export class SidenavMenuComponent implements OnInit {
         },
         {
           title: 'Usuario',
-          routerLink: null
+          routerLink: 'usuario'
         },
         {
           title: 'Bancos',

@@ -11,12 +11,15 @@ import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.com
 import { SearchBarComponent } from "./components/search-bar/search-bar.component";
 import { FabButtonComponent } from "./components/fab-button/fab-button.component";
 import { UnidadeCadastroViewComponent } from "./views/unidade-cadastro-view/unidade-cadastro-view.component";
+import { UsuarioViewComponent } from "./views/usuario-view/usuario-view.component";
+import { UsuarioCardComponent } from "./components/usuario-card/usuario-card.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
     LoginViewComponent,
     UnidadeViewComponent,
     UnidadeCadastroViewComponent,
+    UsuarioViewComponent,
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [
@@ -29,5 +32,6 @@ export const COMPONENTS_IMPORTS: Array<any> = [
     UnidadeCardComponent,
     SearchBarComponent,
     FabButtonComponent,
+    UsuarioCardComponent,
     ...VIEWS_IMPORTS    
 ];

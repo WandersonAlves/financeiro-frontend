@@ -1,0 +1,11 @@
+<div fxLayout="row" class="usuario-card flex-justify-space-around flex-align-center">
+  <div class="usuario-card--status-indicator" [ngClass]="{'usuario-card--status-indicator--active': usuario.status === 'unblock', 'usuario-card--status-indicator--disabled': usuario.status === 'block'}">
+  </div>
+  <span>{{usuario.name}}</span>
+  <span>Unidade: {{usuario.unidade}}</span>
+  <span>ID: {{usuario.id}}</span>
+  <button mat-button *ngIf="usuario.status === 'unblock'; else unblockUsuario">BLOQUEAR</button>
+  <ng-template #unblockUsuario>
+    <button mat-button>DESBLOQUEAR</button>
+  </ng-template>
+</div>
