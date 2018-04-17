@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventObservableService } from '../../services/shared/observable.service';
+import { MatDialog } from '@angular/material';
+import { DialogAlertComponent } from '../../components/dialog-alert/dialog-alert.component';
 
 @Component({
   selector: 'unidade-cadastro-view',
@@ -8,10 +10,16 @@ import { EventObservableService } from '../../services/shared/observable.service
 })
 export class UnidadeCadastroViewComponent implements OnInit {
 
-  constructor(private eventObservable: EventObservableService) { }
+  constructor(private eventObservable: EventObservableService, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.eventObservable.emitRouteChange({ mainRoute: 'Cadastro', childrenRoute: 'Cadastro de Unidade' });
+  }
+
+  openConfirm() {
+    this.dialog.open(DialogAlertComponent, {
+      data: "Unidade cadastrada com sucesso!"
+    });
   }
 
 }
