@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged';
 
 @Component({
   selector: 'search-bar',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor() { }
+  public _searchQuery: string;
+
+  private modelSubject: Subject<string> = new Subject<string>();
+
+  @Output() searchQuery = new EventEmitter<string>();
+
+  constructor() { 
+    this.modelSubject
+      .debounceTime(300)
+      .distinctUntilChanged()
+      .subscribe(value => this.searchQuery.emit(value))
+  }
 
   ngOnInit() {
+  }
+
+  emitQuery(): void {
+    this.modelSubject.next(this._searchQuery);
   }
 
 }

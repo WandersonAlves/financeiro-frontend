@@ -10,20 +10,20 @@ import { IBanco } from '../../interfaces/banco.interface';
 })
 export class BancoViewComponent implements OnInit {
 
-  public bancos: IBanco[] = [
+  private _bancos: IBanco[] = [
     {
-      codigo: '654',
-      nome: 'Banco A.J.Renner S.A.',
+      codigo: '001',
+      nome: 'Banco do Brasil S.A.',
       status: 'unblock'
     },
     {
-      codigo: 'M19',
-      nome: 'Banco CNH Capital S.A.',
+      codigo: '341',
+      nome: 'Banco Itaú S.A.',
       status: 'unblock'
     },
     {
-      codigo: '024',
-      nome: 'Banco de Pernambuco S.A. - BANDEPE',
+      codigo: '356',
+      nome: 'Banco Real S.A. (antigo)',
       status: 'block'
     },
     {
@@ -31,16 +31,50 @@ export class BancoViewComponent implements OnInit {
       nome: 'Banco Santander (Brasil) S.A.',
       status: 'unblock'
     },
+    {
+      codigo: '652',
+      nome: 'Itaú Unibanco Holding S.A.',
+      status: 'unblock'
+    },
+    {
+      codigo: '237',
+      nome: 'Banco Bradesco S.A.',
+      status: 'unblock'
+    },
+    {
+      codigo: '745',
+      nome: 'Banco Citibank S.A.',
+      status: 'unblock'
+    },
+    {
+      codigo: '399',
+      nome: 'HSBC Bank Brasil S.A. – Banco Múltiplo',
+      status: 'unblock'
+    },
   ]
+
+  public bancos: IBanco[];
 
   constructor(private eventObservable: EventObservableService, private router: Router) { }
 
   ngOnInit() {
+    this.bancos = this._bancos;
     this.eventObservable.emitRouteChange({ mainRoute: 'Cadastro', childrenRoute: 'Listagem de Banco' });
   }
 
   createBanco() {
     this.router.navigate(['main/banco-cadastro']);
+  }
+
+  searchBanco(searchQuery: string) {
+    if (!searchQuery) {
+      this.bancos = this._bancos;
+    }
+    else {
+      this.bancos = this._bancos.filter(banco => {
+        return banco.nome.toUpperCase().includes(searchQuery.toUpperCase());
+      });
+    }
   }
 
 }

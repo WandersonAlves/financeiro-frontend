@@ -1,5 +1,5 @@
 <div fxLayout="column" fxLayoutGap="30px">
-  <search-bar></search-bar>
+  <search-bar (searchQuery)="searchUnidade($event)"></search-bar>
   <div fxLayout="row" class="flex-wrap">
     <unidade-card *ngFor="let unidade of unidades" fxFlex="50" [unidade]="unidade"></unidade-card>
   </div>

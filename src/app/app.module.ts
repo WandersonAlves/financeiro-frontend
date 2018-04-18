@@ -14,6 +14,7 @@ import { APP_ROUTES } from './app.routes';
 
 import 'hammerjs';
 import { APP_PROVIDERS } from './app.providers';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { APP_PROVIDERS } from './app.providers';
     FlexLayoutModule,
     MaterialImports,
     RouterModule.forRoot(APP_ROUTES),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [...APP_PROVIDERS],
   bootstrap: [AppComponent],

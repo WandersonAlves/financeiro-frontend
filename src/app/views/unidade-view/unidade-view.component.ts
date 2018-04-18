@@ -10,7 +10,7 @@ import { IUnidade } from '../../interfaces/unidade.interface';
 })
 export class UnidadeViewComponent implements OnInit {
 
-  public unidades: IUnidade[] = [
+  private _unidades: IUnidade[] = [
     {
       date: '17/04/2018',
       name: 'M1',
@@ -29,16 +29,30 @@ export class UnidadeViewComponent implements OnInit {
       registrant: 'Rebecca',
       status: 'unblock'
     },
-  ]
+  ];
+
+  public unidades: IUnidade[];
 
   constructor(private router: Router, private eventObservable: EventObservableService) { }
 
   ngOnInit() {
     this.eventObservable.emitRouteChange({mainRoute: 'Cadastro', childrenRoute: 'Listagem de Unidade'});
+    this.unidades = this._unidades;
   }
 
   createUnidade() {
     this.router.navigate(['main/unidade-cadastro']);
+  }
+
+  searchUnidade(searchQuery: string) {
+    if (!searchQuery) {
+      this.unidades = this._unidades;
+    }
+    else {
+      this.unidades = this._unidades.filter(unidade => {
+        return unidade.name.toUpperCase().includes(searchQuery.toUpperCase());
+      });
+    }    
   }
 
 }
