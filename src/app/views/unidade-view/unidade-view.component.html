@@ -1,16 +1,7 @@
 <div fxLayout="column" fxLayoutGap="30px">
   <search-bar></search-bar>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
-  <unidade-card></unidade-card>
+  <div fxLayout="row" class="flex-wrap">
+    <unidade-card *ngFor="let unidade of unidades" fxFlex="50" [unidade]="unidade"></unidade-card>
+  </div>
 </div>
 <fab-button (click)="createUnidade()"></fab-button>

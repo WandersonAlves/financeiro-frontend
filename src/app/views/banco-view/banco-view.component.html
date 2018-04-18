@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutGap="30px">
+  <search-bar></search-bar>
+  <div fxLayout="row" class="flex-wrap">
+    <banco-card *ngFor="let banco of bancos" fxFlex="50" [banco]="banco"></banco-card>
+  </div>
+</div>
+<fab-button (click)="createBanco()"></fab-button>

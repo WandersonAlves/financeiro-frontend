@@ -18,15 +18,15 @@ export class SidenavMenuComponent implements OnInit {
         },
         {
           title: 'Usuario',
-          routerLink: null
+          routerLink: 'usuario'
         },
         {
           title: 'Bancos',
-          routerLink: null
+          routerLink: 'banco'
         },
         {
-          title: 'Aluno Próprio',
-          routerLink: null
+          title: 'Colaboradores',
+          routerLink: 'colaborador'
         },
       ]
     },

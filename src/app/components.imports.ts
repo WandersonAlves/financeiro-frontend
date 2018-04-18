@@ -11,12 +11,25 @@ import { UnidadeCardComponent } from "./components/unidade-card/unidade-card.com
 import { SearchBarComponent } from "./components/search-bar/search-bar.component";
 import { FabButtonComponent } from "./components/fab-button/fab-button.component";
 import { UnidadeCadastroViewComponent } from "./views/unidade-cadastro-view/unidade-cadastro-view.component";
+import { UsuarioViewComponent } from "./views/usuario-view/usuario-view.component";
+import { UsuarioCardComponent } from "./components/usuario-card/usuario-card.component";
+import { DialogAlertComponent } from "./components/dialog-alert/dialog-alert.component";
+import { BancoCadastroViewComponent } from "./views/banco-cadastro-view/banco-cadastro-view.component";
+import { BancoViewComponent } from "./views/banco-view/banco-view.component";
+import { BancoCardComponent } from "./components/banco-card/banco-card.component";
+import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-view/colaborador-cadastro-view.component";
+import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
     LoginViewComponent,
     UnidadeViewComponent,
     UnidadeCadastroViewComponent,
+    UsuarioViewComponent,
+    BancoCadastroViewComponent,
+    ColaboradorCadastroViewComponent,
+    BancoViewComponent,
+    ColaboradorViewComponent,
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [
@@ -29,5 +42,8 @@ export const COMPONENTS_IMPORTS: Array<any> = [
     UnidadeCardComponent,
     SearchBarComponent,
     FabButtonComponent,
-    ...VIEWS_IMPORTS    
+    UsuarioCardComponent,
+    DialogAlertComponent,
+    BancoCardComponent,
+    ...VIEWS_IMPORTS,
 ];
