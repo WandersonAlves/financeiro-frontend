@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AlunoCadastroViewComponent } from './aluno-cadastro-view.component';
+import { BancoViewComponent } from './banco-view.component';
 
-describe('AlunoCadastroViewComponent', () => {
-  let component: AlunoCadastroViewComponent;
-  let fixture: ComponentFixture<AlunoCadastroViewComponent>;
+describe('BancoViewComponent', () => {
+  let component: BancoViewComponent;
+  let fixture: ComponentFixture<BancoViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlunoCadastroViewComponent ]
+      declarations: [ BancoViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AlunoCadastroViewComponent);
+    fixture = TestBed.createComponent(BancoViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

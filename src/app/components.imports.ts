@@ -15,7 +15,10 @@ import { UsuarioViewComponent } from "./views/usuario-view/usuario-view.componen
 import { UsuarioCardComponent } from "./components/usuario-card/usuario-card.component";
 import { DialogAlertComponent } from "./components/dialog-alert/dialog-alert.component";
 import { BancoCadastroViewComponent } from "./views/banco-cadastro-view/banco-cadastro-view.component";
-import { AlunoCadastroViewComponent } from "./views/aluno-cadastro-view/aluno-cadastro-view.component";
+import { BancoViewComponent } from "./views/banco-view/banco-view.component";
+import { BancoCardComponent } from "./components/banco-card/banco-card.component";
+import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-view/colaborador-cadastro-view.component";
+import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
@@ -24,7 +27,9 @@ export const VIEWS_IMPORTS: Array<any> = [
     UnidadeCadastroViewComponent,
     UsuarioViewComponent,
     BancoCadastroViewComponent,
-    AlunoCadastroViewComponent
+    ColaboradorCadastroViewComponent,
+    BancoViewComponent,
+    ColaboradorViewComponent,
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [
@@ -39,5 +44,6 @@ export const COMPONENTS_IMPORTS: Array<any> = [
     FabButtonComponent,
     UsuarioCardComponent,
     DialogAlertComponent,
-    ...VIEWS_IMPORTS    
+    BancoCardComponent,
+    ...VIEWS_IMPORTS,
 ];

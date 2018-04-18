@@ -1,0 +1,23 @@
+.banco-card {
+    box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.20);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.10);
+    padding: 15px;
+    margin: 20px;
+
+    &--status-indicator {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        
+        &--active {
+            background-color: #008000b8;
+        }
+        &--disabled {
+            background-color: #f44336b8
+        }
+    }
+    &--name {
+        font-size: 2rem;
+    }
+}

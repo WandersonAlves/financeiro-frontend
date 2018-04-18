@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventObservableService } from '../../services/shared/observable.service';
 
 @Component({
   selector: 'banco-cadastro-view',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BancoCadastroViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private eventObservable: EventObservableService) { }
 
   ngOnInit() {
+    this.eventObservable.emitRouteChange({ mainRoute: 'Cadastro', childrenRoute: 'Cadastro de Banco' });
   }
 
 }

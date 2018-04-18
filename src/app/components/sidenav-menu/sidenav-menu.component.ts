@@ -22,11 +22,11 @@ export class SidenavMenuComponent implements OnInit {
         },
         {
           title: 'Bancos',
-          routerLink: 'banco-cadastro'
+          routerLink: 'banco'
         },
         {
-          title: 'Aluno',
-          routerLink: 'aluno-cadastro'
+          title: 'Colaboradores',
+          routerLink: 'colaborador'
         },
       ]
     },
