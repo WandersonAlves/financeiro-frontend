@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventObservableService } from '../../services/shared/observable.service';
 import { IUsuario } from '../../interfaces/usuario.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'usuario-view',
@@ -24,10 +25,14 @@ export class UsuarioViewComponent implements OnInit {
     },
   ]
 
-  constructor(private eventObservable: EventObservableService) { }
+  constructor(private eventObservable: EventObservableService, private router: Router) { }
 
   ngOnInit() {
     this.eventObservable.emitRouteChange({ mainRoute: 'Cadastro', childrenRoute: 'Listagem de Usuario' });
+  }
+
+  createUsuario(): void {
+    this.router.navigate(['main/usuario-cadastro']);
   }
 
 }

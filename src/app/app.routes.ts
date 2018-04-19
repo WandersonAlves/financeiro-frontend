@@ -8,6 +8,7 @@ import { BancoCadastroViewComponent } from "./views/banco-cadastro-view/banco-ca
 import { BancoViewComponent } from "./views/banco-view/banco-view.component";
 import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-view/colaborador-cadastro-view.component";
 import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
+import { UsuarioCadastroViewComponent } from "./views/usuario-cadastro-view/usuario-cadastro-view.component";
 
 export const APP_ROUTES: Routes = [
     { path: 'login', component: LoginViewComponent },
@@ -18,6 +19,7 @@ export const APP_ROUTES: Routes = [
             { path: 'unidade', component: UnidadeViewComponent },
             { path: 'unidade-cadastro', component: UnidadeCadastroViewComponent },
             { path: 'usuario', component: UsuarioViewComponent },
+            { path: 'usuario-cadastro', component: UsuarioCadastroViewComponent },
             { path: 'banco', component: BancoViewComponent },
             { path: 'banco-cadastro', component: BancoCadastroViewComponent },
             { path: 'colaborador', component: ColaboradorViewComponent },

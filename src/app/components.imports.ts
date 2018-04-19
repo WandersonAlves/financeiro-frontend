@@ -19,6 +19,7 @@ import { BancoViewComponent } from "./views/banco-view/banco-view.component";
 import { BancoCardComponent } from "./components/banco-card/banco-card.component";
 import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-view/colaborador-cadastro-view.component";
 import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
+import { UsuarioCadastroViewComponent } from "./views/usuario-cadastro-view/usuario-cadastro-view.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
@@ -30,6 +31,7 @@ export const VIEWS_IMPORTS: Array<any> = [
     ColaboradorCadastroViewComponent,
     BancoViewComponent,
     ColaboradorViewComponent,
+    UsuarioCadastroViewComponent,
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [
