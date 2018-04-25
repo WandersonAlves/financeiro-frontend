@@ -40,7 +40,7 @@ export class SidenavMenuComponent implements OnInit {
         },
         {
           title: 'Recebimentos',
-          routerLink: null
+          routerLink: 'recebimentos'
         },
         {
           title: 'Repasses',

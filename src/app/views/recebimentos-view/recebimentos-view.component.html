@@ -1,0 +1,10 @@
+<div fxLayout="column" fxLayoutGap="20px">
+  <mat-form-field>
+    <mat-select placeholder="Tipo de recebimento" [(ngModel)]="selectedRecebimento" (change)="changeRoute()">
+      <mat-option value="1">Alunos Próprios</mat-option>
+      <mat-option value="2">Alunos de Filiadas</mat-option>
+      <mat-option value="3">Recebimentos Diversos</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<router-outlet></router-outlet>

@@ -21,6 +21,10 @@ import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-v
 import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
 import { UsuarioCadastroViewComponent } from "./views/usuario-cadastro-view/usuario-cadastro-view.component";
 import { MovimentoInicialViewComponent } from "./views/movimento-inicial-view/movimento-inicial-view.component";
+import { RecebimentosViewComponent } from "./views/recebimentos-view/recebimentos-view.component";
+import { RecebimentosAlunosPropriosViewComponent } from "./views/recebimentos-alunos-proprios-view/recebimentos-alunos-proprios-view.component";
+import { RecebimentosAlunosFiliadasViewComponent } from "./views/recebimentos-alunos-filiadas-view/recebimentos-alunos-filiadas-view.component";
+import { RecebimentosDiversosComponent } from "./views/recebimentos-diversos/recebimentos-diversos.component";
 
 export const VIEWS_IMPORTS: Array<any> = [
     AppShellComponent,
@@ -34,6 +38,10 @@ export const VIEWS_IMPORTS: Array<any> = [
     ColaboradorViewComponent,
     UsuarioCadastroViewComponent,
     MovimentoInicialViewComponent,
+    RecebimentosViewComponent,
+    RecebimentosAlunosPropriosViewComponent,
+    RecebimentosAlunosFiliadasViewComponent,
+    RecebimentosDiversosComponent,
 ];
 
 export const COMPONENTS_IMPORTS: Array<any> = [

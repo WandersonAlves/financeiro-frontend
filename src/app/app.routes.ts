@@ -10,6 +10,10 @@ import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-v
 import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
 import { UsuarioCadastroViewComponent } from "./views/usuario-cadastro-view/usuario-cadastro-view.component";
 import { MovimentoInicialViewComponent } from "./views/movimento-inicial-view/movimento-inicial-view.component";
+import { RecebimentosViewComponent } from "./views/recebimentos-view/recebimentos-view.component";
+import { RecebimentosAlunosPropriosViewComponent } from "./views/recebimentos-alunos-proprios-view/recebimentos-alunos-proprios-view.component";
+import { RecebimentosAlunosFiliadasViewComponent } from "./views/recebimentos-alunos-filiadas-view/recebimentos-alunos-filiadas-view.component";
+import { RecebimentosDiversosComponent } from "./views/recebimentos-diversos/recebimentos-diversos.component";
 
 export const APP_ROUTES: Routes = [
     { path: 'login', component: LoginViewComponent },
@@ -26,6 +30,15 @@ export const APP_ROUTES: Routes = [
             { path: 'colaborador', component: ColaboradorViewComponent },
             { path: 'colaborador-cadastro',  component: ColaboradorCadastroViewComponent },
             { path: 'movimento-inicial', component: MovimentoInicialViewComponent },
+            { 
+                path: 'recebimentos',             
+                component: RecebimentosViewComponent,
+                children: [
+                    { path: 'aluno-proprio', component: RecebimentosAlunosPropriosViewComponent },
+                    { path: 'aluno-filiado', component: RecebimentosAlunosFiliadasViewComponent },
+                    { path: 'diversos', component: RecebimentosDiversosComponent },
+                ]
+            },
         ] 
     },
     { path: '', redirectTo: '/login', pathMatch: 'full' }
