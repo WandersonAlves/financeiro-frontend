@@ -1,7 +1,9 @@
 <div fxLayout="column" fxLayoutGap="30px">
-  <search-bar (searchQuery)="searchUnidade($event)"></search-bar>
+  <div class="full-width" fxLayout="row" fxLayoutGap="10px">
+    <search-bar class="full-width" (searchQuery)="searchUnidade($event)"></search-bar>
+    <fab-button (click)="createUnidade()"></fab-button>
+  </div>
   <div fxLayout="row" class="flex-wrap">
     <unidade-card *ngFor="let unidade of unidades" fxFlex="50" [unidade]="unidade"></unidade-card>
   </div>
 </div>
-<fab-button (click)="createUnidade()"></fab-button>
