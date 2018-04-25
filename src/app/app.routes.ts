@@ -9,6 +9,7 @@ import { BancoViewComponent } from "./views/banco-view/banco-view.component";
 import { ColaboradorCadastroViewComponent } from "./views/colaborador-cadastro-view/colaborador-cadastro-view.component";
 import { ColaboradorViewComponent } from "./views/colaborador-view/colaborador-view.component";
 import { UsuarioCadastroViewComponent } from "./views/usuario-cadastro-view/usuario-cadastro-view.component";
+import { MovimentoInicialViewComponent } from "./views/movimento-inicial-view/movimento-inicial-view.component";
 
 export const APP_ROUTES: Routes = [
     { path: 'login', component: LoginViewComponent },
@@ -24,6 +25,7 @@ export const APP_ROUTES: Routes = [
             { path: 'banco-cadastro', component: BancoCadastroViewComponent },
             { path: 'colaborador', component: ColaboradorViewComponent },
             { path: 'colaborador-cadastro',  component: ColaboradorCadastroViewComponent },
+            { path: 'movimento-inicial', component: MovimentoInicialViewComponent },
         ] 
     },
     { path: '', redirectTo: '/login', pathMatch: 'full' }

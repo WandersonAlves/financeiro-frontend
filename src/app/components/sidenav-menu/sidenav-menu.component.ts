@@ -36,7 +36,7 @@ export class SidenavMenuComponent implements OnInit {
       children: [
         {
           title: 'Movimento Inicial',
-          routerLink: null
+          routerLink: 'movimento-inicial'
         },
         {
           title: 'Recebimentos',
