@@ -17,4 +17,8 @@ export class LoginViewComponent implements OnInit {
     this.router.navigate(['main']);
   }
 
+  exitSystem() {
+    window.close();
+  }
+
 }
