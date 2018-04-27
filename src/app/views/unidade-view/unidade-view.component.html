@@ -3,7 +3,7 @@
     <search-bar class="full-width" (searchQuery)="searchUnidade($event)"></search-bar>
     <fab-button (click)="createUnidade()"></fab-button>
   </div>
-  <div fxLayout="row" class="flex-wrap">
-    <unidade-card *ngFor="let unidade of unidades" fxFlex="50" [unidade]="unidade"></unidade-card>
+  <div fxLayout="row" class="cards-area flex-wrap">
+    <unidade-card *ngFor="let unidade of unidades" [unidade]="unidade"></unidade-card>
   </div>
 </div>
