@@ -4,6 +4,6 @@
     <fab-button (click)="createUnidade()"></fab-button>
   </div>
   <div fxLayout="row" class="cards-area flex-wrap">
-    <unidade-card *ngFor="let unidade of unidades" [unidade]="unidade"></unidade-card>
+    <unidade-card fxFlex="100" *ngFor="let unidade of unidades" [unidade]="unidade"></unidade-card>
   </div>
 </div>

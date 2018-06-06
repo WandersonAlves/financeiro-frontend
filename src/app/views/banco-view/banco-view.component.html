@@ -4,6 +4,6 @@
     <fab-button (click)="createBanco()"></fab-button>
   </div>
   <div fxLayout="row" class="flex-wrap">
-    <banco-card *ngFor="let banco of bancos" fxFlex="50" [banco]="banco"></banco-card>
+    <banco-card fxFlex="100" *ngFor="let banco of bancos" [banco]="banco"></banco-card>
   </div>
 </div>
