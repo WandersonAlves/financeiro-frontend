@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { IBanco } from '../../interfaces/banco.interface';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'banco-view',
   templateUrl: './banco-view.component.html',
   styleUrls: ['./banco-view.component.scss']
@@ -51,7 +52,7 @@ export class BancoViewComponent implements OnInit {
       nome: 'HSBC Bank Brasil S.A. – Banco Múltiplo',
       status: 'unblock'
     },
-  ]
+  ];
 
   public bancos: IBanco[];
 
@@ -69,8 +70,7 @@ export class BancoViewComponent implements OnInit {
   searchBanco(searchQuery: string) {
     if (!searchQuery) {
       this.bancos = this._bancos;
-    }
-    else {
+    } else {
       this.bancos = this._bancos.filter(banco => {
         return banco.nome.toUpperCase().includes(searchQuery.toUpperCase());
       });

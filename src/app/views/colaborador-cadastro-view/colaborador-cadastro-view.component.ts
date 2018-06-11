@@ -4,6 +4,7 @@ import { DialogAlertComponent } from '../../components/dialog-alert/dialog-alert
 import { EventObservableService } from '../../services/shared/observable.service';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'colaborador-cadastro-view',
   templateUrl: './colaborador-cadastro-view.component.html',
   styleUrls: ['./colaborador-cadastro-view.component.scss']
@@ -17,7 +18,7 @@ export class ColaboradorCadastroViewComponent implements OnInit {
   }
   openConfirm() {
     this.dialog.open(DialogAlertComponent, {
-      data: "Aluno cadastrado com sucesso!"
+      data: 'Aluno cadastrado com sucesso!'
     });
   }
 

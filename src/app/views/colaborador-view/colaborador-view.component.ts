@@ -3,6 +3,7 @@ import { EventObservableService } from '../../services/shared/observable.service
 import { Router } from '@angular/router';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'colaborador-view',
   templateUrl: './colaborador-view.component.html',
   styleUrls: ['./colaborador-view.component.scss']

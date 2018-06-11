@@ -4,6 +4,7 @@ import { EventObservableService } from '../../services/shared/observable.service
 import { IUnidade } from '../../interfaces/unidade.interface';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'unidade-view',
   templateUrl: './unidade-view.component.html',
   styleUrls: ['./unidade-view.component.scss']
@@ -47,12 +48,11 @@ export class UnidadeViewComponent implements OnInit {
   searchUnidade(searchQuery: string) {
     if (!searchQuery) {
       this.unidades = this._unidades;
-    }
-    else {
+    } else {
       this.unidades = this._unidades.filter(unidade => {
         return unidade.name.toUpperCase().includes(searchQuery.toUpperCase());
       });
-    }    
+    }
   }
 
 }

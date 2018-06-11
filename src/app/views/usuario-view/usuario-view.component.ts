@@ -4,6 +4,7 @@ import { IUsuario } from '../../interfaces/usuario.interface';
 import { Router } from '@angular/router';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'usuario-view',
   templateUrl: './usuario-view.component.html',
   styleUrls: ['./usuario-view.component.scss']

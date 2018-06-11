@@ -1,4 +1,4 @@
 export interface ICurrentRouteBanner {
-    mainRoute: string,
-    childrenRoute: string
+    mainRoute: string;
+    childrenRoute: string;
 }

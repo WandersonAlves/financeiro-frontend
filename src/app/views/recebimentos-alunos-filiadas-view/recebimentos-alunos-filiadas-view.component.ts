@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EventObservableService } from '../../services/shared/observable.service';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'recebimentos-alunos-filiadas-view',
   templateUrl: './recebimentos-alunos-filiadas-view.component.html',
   styleUrls: ['./recebimentos-alunos-filiadas-view.component.scss']
