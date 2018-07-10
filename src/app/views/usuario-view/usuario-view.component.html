@@ -1,0 +1,9 @@
+<div fxLayout="column" fxLayoutGap="30px">
+  <div class="full-width" fxLayout="row" fxLayoutGap="10px">
+    <search-bar class="full-width"></search-bar>
+    <fab-button (click)="createUsuario()"></fab-button>
+  </div>
+  <div fxLayout="row" class="flex-wrap">
+    <usuario-card *ngFor="let usuario of usuarios" fxFlex="100" [usuario]="usuario"></usuario-card>
+  </div>
+</div>

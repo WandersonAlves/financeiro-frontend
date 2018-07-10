@@ -1,0 +1,12 @@
+.cards-area {
+    @media (min-width: 1369px) {
+        flex-direction: column;
+    }
+
+    unidade-card {
+        @media (min-width: 1369px) {
+            max-width: 50%;
+            min-width: 50%;
+        }
+    }
+}

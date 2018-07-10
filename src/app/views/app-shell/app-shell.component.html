@@ -5,11 +5,9 @@
     </mat-sidenav>
     <mat-sidenav-content class="app--content">
       <div class="app--content--area">
-        <div fxLayout="row" fxLayoutGap="10px" class="app--location-area flex-align-center">
-          <button mat-icon-button (click)="navigateBack()">
-            <mat-icon class="app--location-area--icon">keyboard_arrow_left</mat-icon>
-          </button>
-          <span class="app--location-area--current">CADASTROS > UNIDADE</span>
+        <div fxLayout="column" fxLayoutGap="4px" class="app--location-area">
+          <span class="app--location-area--current">{{routeBanner.mainRoute}}</span>
+          <span class="app--location-area--route">{{routeBanner.childrenRoute}}</span>
         </div>
         <router-outlet></router-outlet>
       </div>

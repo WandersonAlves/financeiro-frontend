@@ -3,12 +3,27 @@
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.10);
     padding: 15px;
+    margin: 20px;
+
+    * {
+        margin: 0px 20px 0px 0px;
+    }
+
+    // @media (min-width: 1369px) {
+    //     flex-direction: column !important;
+    //     *:not(:last-child) {
+    //         margin: 0px 0px 20px 0px;
+    //     }
+    //     *:last-child {
+    //         margin: 0;
+    //     }
+    // }
 
     &--status-indicator {
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        
+
         &--active {
             background-color: #008000b8;
         }

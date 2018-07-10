@@ -1,0 +1,46 @@
+<div class="movimento-inicial" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+    <h2 *ngIf="!movimentoInicialAllowed; else movimentoInicialIsAllowed">Ainda não é possivel fazer o movimento inicial desse mês</h2>
+  </div>
+</div>
+<ng-template #movimentoInicialIsAllowed>
+  <div class="text-center" fxLayout="column" fxLayoutGap="40px" *ngIf="currStep === 1; else secondStep">
+    <div fxLayout="column" fxLayoutGap="10px">
+      <span>O movimento será totalmente excluido</span>
+      <span>É isso que deseja fazer?</span>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <button mat-raised-button (click)="currStep = 2">Sim</button>
+      <button mat-raised-button>Não</button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #secondStep>
+  <div class="text-center" fxLayout="column" fxLayoutGap="40px" *ngIf="currStep === 2; else thirthStep">
+    <div fxLayout="column" fxLayoutGap="10px">
+      <span>Atenção:</span>
+      <span>Já copiou movimento que será excluido?</span>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <button mat-raised-button (click)="currStep = 3">Sim</button>
+      <button mat-raised-button>Não</button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #thirthStep>
+  <div class="text-center" fxLayout="column" fxLayoutGap="40px" *ngIf="currStep === 3;">
+    <div fxLayout="column" fxLayoutGap="10px">
+      <span>Movimento foi excluido</span>
+      <span>Para iniciar novo movimento, informe o saldo inicial</span>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Saldo inicial de caixa"/>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <button mat-raised-button>Limpar</button>
+      <button mat-raised-button>Incluir</button>
+    </div>
+  </div>
+</ng-template>

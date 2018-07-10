@@ -1,0 +1,72 @@
+<div fxLayout="row" fxLayoutGap="20px">
+  <mat-form-field>
+    <mat-select placeholder="Unidade">
+      <mat-option value="1">M1</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Código"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Nome do usuario"/>
+  </mat-form-field>
+</div>
+<div style="margin-bottom: 40px"></div>
+<div fxLayout="column" fxLayoutGap="20px">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="uppercase font-500">CRECEP</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column" fxLayoutGap="20px">
+      <span class="uppercase font-500">Permissões</span>
+      <mat-checkbox fxFlex="25">Todas</mat-checkbox>
+      <div fxLayout="row" fxLayoutGap="20px" class="flex-wrap">
+        <mat-checkbox fxFlex="20">Cadastro e bloqueio</mat-checkbox>
+        <mat-checkbox fxFlex="20">Iniciar movimento</mat-checkbox>
+        <mat-checkbox fxFlex="20">Rec. Al. Próprios</mat-checkbox>
+        <mat-checkbox fxFlex="20">Rec. Al. Filiadas</mat-checkbox>
+        <mat-checkbox fxFlex="20">Rec. Diversos</mat-checkbox>
+        <mat-checkbox fxFlex="20">Repasse Caixa</mat-checkbox>
+        <mat-checkbox fxFlex="20">Retificação</mat-checkbox>
+      </div>
+      <span class="uppercase font-500">Emissão de Relatórios</span>
+      <mat-checkbox fxFlex="25">Todos</mat-checkbox>
+      <div fxLayout="row" fxLayoutGap="20px" class="flex-wrap">
+        <mat-checkbox fxFlex="20">Boletim Diário</mat-checkbox>
+        <mat-checkbox fxFlex="20">Resumo Mensal</mat-checkbox>
+        <mat-checkbox fxFlex="20">Aviso a Filiadas</mat-checkbox>
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="uppercase font-500">PLANCOB</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column" fxLayoutGap="20px">
+      <span class="uppercase font-500">Operações</span>
+      <mat-checkbox fxFlex="25">Todas</mat-checkbox>
+      <div fxLayout="row" fxLayoutGap="20px" class="flex-wrap">
+        <mat-checkbox fxFlex="20">Cadastro e bloqueio</mat-checkbox>
+        <mat-checkbox fxFlex="20">Iniciar movimento</mat-checkbox>
+        <mat-checkbox fxFlex="20">Produção</mat-checkbox>
+        <mat-checkbox fxFlex="20">Baixas</mat-checkbox>
+        <mat-checkbox fxFlex="20">Eventuais</mat-checkbox>
+        <mat-checkbox fxFlex="20">?</mat-checkbox>
+        <mat-checkbox fxFlex="20">Retificação</mat-checkbox>
+      </div>
+      <span class="uppercase font-500">Relatórios</span>
+      <mat-checkbox fxFlex="25">Todos</mat-checkbox>
+      <div fxLayout="row" fxLayoutGap="20px" class="flex-wrap">
+        <mat-checkbox fxFlex="20">Arquivo de Dados</mat-checkbox>
+        <mat-checkbox fxFlex="20">Boletim Diário</mat-checkbox>
+        <mat-checkbox fxFlex="20">Plancob Mensal</mat-checkbox>
+        <mat-checkbox fxFlex="20">N.Fiscais Emitidas</mat-checkbox>
+        <mat-checkbox fxFlex="20">Baixas por Extra-Caixa</mat-checkbox>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</div>

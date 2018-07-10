@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'sidenav-menu',
   templateUrl: './sidenav-menu.component.html',
   styleUrls: ['./sidenav-menu.component.scss']
@@ -12,44 +13,20 @@ export class SidenavMenuComponent implements OnInit {
       title: 'cadastros',
       isOpen: false,
       children: [
-        {
-          title: 'Unidade',
-          routerLink: 'unidade'
-        },
-        {
-          title: 'Usuario',
-          routerLink: null
-        },
-        {
-          title: 'Bancos',
-          routerLink: null
-        },
-        {
-          title: 'Aluno Próprio',
-          routerLink: null
-        },
+        { title: 'Unidade', routerLink: 'unidade' },
+        { title: 'Usuario', routerLink: 'usuario' },
+        { title: 'Bancos', routerLink: 'banco' },
+        { title: 'Colaboradores', routerLink: 'colaborador' },
       ]
     },
     {
       title: 'CRECEp',
       isOpen: false,
       children: [
-        {
-          title: 'Movimento Inicial',
-          routerLink: null
-        },
-        {
-          title: 'Recebimentos',
-          routerLink: null
-        },
-        {
-          title: 'Repasses',
-          routerLink: null
-        },
-        {
-          title: 'Relatórios',
-          routerLink: null
-        }
+        { title: 'Movimento Inicial', routerLink: 'movimento-inicial' },
+        { title: 'Recebimentos', routerLink: 'recebimentos' },
+        { title: 'Repasses', routerLink: null },
+        { title: 'Relatórios', routerLink: null }
       ]
     },
     {
@@ -89,8 +66,8 @@ export class SidenavMenuComponent implements OnInit {
 }
 
 interface IMenuItem {
-  title: string,
-  isOpen: boolean,
-  disabled?: boolean,
-  children?: Array<{ title: string, routerLink: string}>
+  title: string;
+  isOpen: boolean;
+  disabled?: boolean;
+  children?: Array<{ title: string, routerLink: string}>;
 }
